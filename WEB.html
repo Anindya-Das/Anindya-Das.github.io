@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Srm search engine</title>
+<link rel="stylesheet" href="for_web.css" type="text/css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+function func(){
+  var s = document.getElementById("uput").value;
+  var ss = s.split(" ");
+  var text="";
+  var i="";
+  for(i=0;i<ss.length;i++)
+  {
+    text+=ss[i] + "<br/>";
+  }
+  document.getElementById("out").innerHTML = text;  
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+<div class="top_bar"> 
+ <a href="https://twitter.com/"> <img src="twitter.png" class="img-responsive top_img" title="Twitter" /> </a>
+ <a href="https://facebook.com"> <img src="Facebook_Logo.png" class="img-responsive top_img" title="Facebook" /> </a>
+ <a href="https://reddit.com"> <img src="reddit.png" class="img-responsive top_img" title="Reddit" /> </a>
+ <a href="https://youtube.com"> <img src="youtube.png" class="img-responsive top_img" title="You Tube" /> </a> 
+ <a href="#"> <img src="about.png" class="img-responsive top_img" style="float:rigth;margin-left:25px" title="About Us" /></a>
+</div>
+<div class="main">
+ <center>
+   <div class="box1">
+     <center>
+	   <div>
+	    
+		 <img src="logo1.png" class="img-responsive" style="heigth:80px;width:120px" /><br/>
+	     <input type="text" class="form-control" style="width:80%;" id="uput" autofocus value="" /> &nbsp &nbsp <br/>
+		 <button class="btn btn-success" onclick="func()"> <span class="glyphicon glyphicon-search"> </span> &nbsp search </button>
+	   	 
+	  </div>
+     </center>
+  </div>	   	
+ </center>
+ <div class="output">
+   <p id="out"> </p>
+ </div>
+</div>
+</div>
+</body>
+</html>

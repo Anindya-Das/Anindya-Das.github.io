@@ -1,0 +1,58 @@
+body{
+	background-image:url("about_srm1.jpg");	
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.user{
+	width:20px;
+}
+
+.box1{
+	border:1px solid transparent;
+	height:550px;
+	width:800px;
+	display:table-cell;
+	vertical-align:middle;
+	margin-top:60px;
+	
+}
+
+.ibox{
+	width:80px;
+}
+
+.output{
+	border-radius:5px;
+	background-color:pink;
+	height:auto;
+	width:100px;
+    	
+}
+
+.top_bar{
+	height:50px;
+	width:300px;
+	float:right;
+	/*background-color:orange;*/
+	margin-top:10px;
+}
+
+.top_img{
+	height:45px;
+	width:45px;
+	margin:2px;
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+	
+}
+
+.main{
+  margin-top:60px;	
+}
+
+img.top_img:hover{
+	box-shadow: 2px 2px 2px 2px #6CBB3C;
+	border-radius: 50px;
+}
